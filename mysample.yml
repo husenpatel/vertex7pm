@@ -1,0 +1,10 @@
+--- 
+- hosts: all 
+  becomes: yes 
+  tasks: 
+      - name: i wnat install apache 
+        apt: 
+          name: apache2 
+          stats: present 
+
+          
