@@ -2,9 +2,9 @@
 - hosts: all 
   become: yes 
   tasks: 
-      - name: i wnat install apache 
+      - name: i want install apache 
         apt: 
           name: apache2 
           state: present 
-
+        when: ansible_os_family="Debian"
           
