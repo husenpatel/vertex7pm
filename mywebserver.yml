@@ -2,7 +2,7 @@
 - hosts: mywebserver 
   become: yes 
   tasks: 
-      - name: i want to install webserver on ubuntu node
+      - name: i want to install aa webserver on ubuntu node
         apt: 
           name: "{{mywebserveronubuntu}}" 
           state: present 
