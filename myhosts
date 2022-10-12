@@ -1,4 +1,15 @@
-[myhosts]
+[mywebserver]
 
 172.31.12.246
 172.31.38.231
+
+
+[myDBserver]
+
+172.31.12.245
+172.31.38.230
+
+
+[mywebserver.vars]
+mywebserveronubuntu= apache2 
+mywebserveronredhat= httd
