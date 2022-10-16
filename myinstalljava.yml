@@ -1,0 +1,15 @@
+---
+- hosts: mywebservernodes
+  become: yes 
+  tasks: 
+    - name: i want to install java open jdk 8 on ubuntu node 
+      apt: 
+          name: "{{myjavajdkonubuntu}}"
+          state: present
+      when: ansible_os_family== "Debian" 
+
+    - name: i want to install java open jdk 8 on RedHat node
+      yum:
+          name: "{{myjavajdkonRedHatnode}}"
+          state: present
+      when: ansible_os_family=="RedHat"
