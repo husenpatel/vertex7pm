@@ -2,3 +2,5 @@
 
 mywebserveronubuntu: apache2 
 mywebserveronredhat: httpd
+myjavajdkonubuntu: openjdk-8-jre
+myjavajdkonRedHatnode: java-1.8.0-openjdk
